@@ -1,0 +1,97 @@
+#ghi chú
+# +++ Biến (variable) +++
+
+# L1: khai triễn biến
+
+# lệnh gán một giá trị biến a là 1
+a=1
+# a chính tên biến . sau dấu "=" là giá trị của biến ở đây là 1
+
+# lệnh gán một giá trị biến b là 3.14
+b=3.14
+# b chính tên biến . sau dấu "=" là giá trị của biến ở đây là 3
+
+#cộng giá trị a và b ta được biến c
+c=a+b 
+
+# để trình bày biến ta sài lệnh 
+print(c)
+# ** TRÌNH BÀY BIẾN KHÁC TRÌNH BÀY KÍ TỰ **
+
+# ** TÊN BIẾN KHÔNG ĐƯỢC CÓ CÁC TỪ KHOA ĐB
+# and del from not while
+# as elif globa or with 
+# assert else if pass yield 
+# break except import print
+# class exec in raise continue
+# finally is return def
+# for lambda try
+
+# CÓ THỂ DÙNG SỐ, CHỮ,"_"
+# TRONG PYHON CÓ PHÂN BIỆT CHỮ IN HOA VÀ THƯỜNG
+
+
+
+# L2 khai nhiều biến
+
+a,b,c=1,3.14,"ảo ma"
+print(a,b,c)
+# a,b,c lần lượt là tên biến . sau "=" 1,3,ảo ma là giá trị biến 
+# các *GIÁ TRỊ BIẾN* biến sẽ *TƯƠNG ỨNG* thứ tự với *TÊN BIẾN* 
+
+
+
+# L3 kiểm tra dữ liệu giá trị của một biến tpye()
+
+a=1
+b=3.14
+c="ảo ma"
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+# <class 'int'> 
+# int(integer) là  số nguyên [ a=1 ]
+
+# <class 'float'>
+# float là số thực [ b=3.14 ]
+
+# <class 'str'> 
+# str(string)  là chuổi kí tự [ c="ảo ma" ]
+
+
+
+# L4 giới hạn của các dữ liệu
+
+print(12345678909876543212345678909)
+# số nguyên [ cả nguyên âm ] nó không bị có giới hạn tức là a=N
+
+print(1.123456789101112131415)
+# 1.1234567891011122 => giới hạn của số thực chỉ là 15 số thập phân
+# số cuối sẽ tự làm tròn
+
+# ***TIP*** 
+# có thể dùng hàm decimal để mở rộng giới hạn của số thực 
+
+from decimal import*   
+# lấy toàn bộ nội dung của thư viện decimal 
+
+getcontext().prec = 30 
+#lấy tối đa chữ số thập phân là 30 
+
+
+d=Decimal(10)/3
+print(d)
+
+
+
+f=10/3 
+print(f)
+
+
+# Lệnh (comment)
+
+
+#dùng để in abc ra màng hình bên trong () phải có dấu ""
+print("abc")  
